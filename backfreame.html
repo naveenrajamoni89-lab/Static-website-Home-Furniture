@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"S
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="backframe.css">
+</head>
+<body>
+    <div id="section1">
+        <video src="https://www.pexels.com/download/video/3773486/" class="video-card" autoplay muted loop></video>
+    <div class="content">
+        <h1 class="head"><span class="fw-bold">"Transform"</span> Your Space, <span class="fw-bold">Elevate</span> Your Lifestyle</h1>
+        <p class="para">Beautiful interiors can change not just your home, but how you live and feel every day</p>
+        <button class="button" onclick="display('section2')">Book Now</button>
+    </div>
+    </div>
+
+    <div id="section2">
+       <div class="homepage-look">
+            <div class="navbar-part">
+                <header class="bg-info text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <h1 class="logo">Holedamaka</h1>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products...">
+                        <button class="btn btn-dark text-white">Search</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-light py-2">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">All</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sofa set 5 seater</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">dining table</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">temple mandir</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">cupboards</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">double beds</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <div class="firstpagepart">      <!-- homecards--> 
+
+             <div class="container">
+    <div class="row">
+  <div class=" col-md-5 mr-2 card d-flex flex-row justify-content-around">
+       <div class="img-card">
+       <img src="data:image/jpeg;base64,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" class="d-block w-100 home-image" height="288"  alt="...">
+       </div>
+       <div class="px-3 pt-2 boxtext">
+        <h2 class="fw-bold">Chaise Lounge Sofa </h2>
+        <p class="fw-bold fs-3 text-danger"><span class="fw-bold">Price:</span> ₹13,499</p>
+        <p>Your Loving Space, Office, Home, Living Room (Green)</p>
+       <p> <span class="fw-bold">Rating :</span> <span>★★★★☆</span></p>
+       <div class="text-end mr-4 mb-2">
+        <button class="viewbutton" onclick="display('sectionviewdetails1')">View More</button>
+        </div>
+       </div>
+  </div>
+  <div class=" col-md-5 mr-2 card d-flex flex-row">
+       <div class="img-card">
+       <img src="https://m.media-amazon.com/images/I/61mea3NHzRL._SX679_.jpg" class="d-block w-100 home-image" height="288"  alt="...">
+       </div>
+       <div class="px-3 pt-2 boxtext">
+        <h2 class="fw-bold">Rosebell  Velvet Sofa Set</h2>
+        <p class="fw-bold fs-3 text-danger"><span class="fw-bold">Price:</span> ₹9,999</p>
+        <p>Rosebell - 4 Seater L Shape Velvet Sofa Set(>Black)</p>
+       <p> <span class="fw-bold">Rating :</span> <span>★★★☆☆</span></p>
+       <div class="text-end mr-4 mb-2">
+        <button class="viewbutton" onclick="display('sectionviewdetails2')" >View More</button>
+        </div>
+       </div>
+  </div>
+  <div class=" col-md-5 mr-2 card d-flex flex-row justify-content-around">
+       <div class="img-card">
+       <img src="data:image/jpeg;base64,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" class="d-block w-100 home-image" height="288"  alt="...">
+       </div>
+       <div class="px-3 pt-2 boxtext">
+        <h2 class="fw-bold">Dining Table Set with 4 Chairs</h2>
+        <p class="fw-bold fs-3 text-danger"><span class="fw-bold">Price:</span> ₹14,762</p>
+        <p>olid Sheesham Wood Four Seater Dining Table Set with 4 Chairs for Living Room Home Wooden 4 Seater Dining Table Set </p>
+       <p> <span class="fw-bold">Rating :</span> <span>★★★★☆</span></p>
+       <div class="text-end mr-4 mb-2">
+        <button class="viewbutton" onclick="display('sectionviewdetails3')">View More</button>
+        </div>
+       </div>
+  </div>
+  <div class=" col-md-5 mr-2 card d-flex flex-row">
+       <div class="img-card">
+       <img src="data:image/jpeg;base64,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" class="d-block w-100 home-image" height="288"  alt="...">
+       </div>
+       <div class="px-3 pt-2 boxtext">
+        <h2 class="fw-bold">Chaise Lounge Sofa </h2>
+        <p class="fw-bold fs-3 text-danger"><span class="fw-bold">Price:</span> ₹13,499</p>
+        <p>Your Loving Space, Office, Home, Living Room (Green)</p>
+       <p> <span class="fw-bold">Rating :</span> <span>★★★★☆</span></p>
+       <div class="text-end mr-4 mb-2">
+        <button class="viewbutton">View More</button>
+        </div>
+       </div>
+  </div>
+  </div>
+  </div>
+
+
+</div>
+              <button class="buttton btn btn-dark" onclick="display('section1')">back</button>
+            </div>
+
+    </div>
+
+ </div>
+<div id="sectionviewdetails1">
+  <div class="container">
+    <div class="row">
+
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://homedecorlo.com/cdn/shop/products/51YTGS28JqS_2048x.jpg?v=1626155571" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoW1NSlMCKNySqYNbaX6O5nMKe_PYEck-ttj9lOwAu5XyeeeP-ZdhA-rC_MgTnbD84E3o&usqp=CAU" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRINb4yTNFnDSltsQcnJ9BNCpESvC0huU7aKZaWufVzBbrVboYfA8pXBZakJngWmfV_R8E&usqp=CAU" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">Velvet Right Arm Modern Chesterfield Chaise Lounge Sofa Couch for Your Loving Space, Office, Home, Living Room (Green) </h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-33%</span><span class="fw-bold fs-2"> ₹13,499</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★☆☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Due to the different shooting environment, the lighting conditions are different, there may be slight color differences in the product, this is a normal phenomenon. Dimensions are measured by hand, there may be 2-3cm deviations
+Excellent Support: It is supported by a wooden frame, so it has excellent measuring capacity. LONG LASTING AT HOME: stool legs need to be installed by yourself</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/41sHkstxtaL._SX300_SY300_QL70_FMwebp_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/61KDp7dmiaL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/71XCq3KOzUL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">DIVISHA HOMES 3 Seater Wooden Sofa Set – Comfortable Velvet Fabric Sofa with Ottoman, Perfect for Small Spaces - Green </h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-25%</span><span class="fw-bold fs-2"> ₹11,499</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★★☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note:Modern & Stylish Design: The 3 seater Wooden Sofa offers a sleek, contemporary look with clean lines and elegant upholstery, perfect for any living room or lounge area.
+Space-Saving 3 seater: The 3 seater design optimizes seating space and fits perfectly in corners, making it ideal for small and medium-sized.Our furniture products are shot at location at FURNY studios and adhere to strict manufacturing processes and studios thos is best for product in this burget  Our furniture products are shot at location at FURNY studios and adhere to strict manufacturing processes and studios thos is best for product in this burget</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/51IHPWvCeLL._SX679_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/61VBHV5eqbL._SL1100_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/41FzlLsa-SL._SL1100_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">FURNY Koreno 4 Seater L Shape Convertible Sofa Set for Living Room, 3 Seater & Ottoman Modular Sectional Couch for Small Space (Green)</h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-36%</span><span class="fw-bold fs-2"> ₹8,999</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★☆☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note:  This is spaciously designed with larger depth to allow for broader seating and allowing complete relaxation until the thigh to provide with superb comfort with. The cushions you sit on are firm & Comfortable. This sofa is constructed featuring handpicked Premium fabric for a regal finish. Durable for long term use and held up by Strong legs that last a lifetime.</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+                 <div class="backbutton">
+                  <button class="buttton btn btn-dark" onclick="display('section2')">back</button>
+                 </div>
+          </div>
+    </div>
+       </div>
+<div id="sectionviewdetails2">
+  <div class="container">
+    <div class="row">
+
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/61mea3NHzRL._SX679_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/41E+yrASi7L._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/51Kug-WzLXL._SL1500_.jpg" class="d-block w-100 image"  alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">Rosebell - 4 Seater Modular Sectional Couch for Small Space, Upholstery-Velvet Fabric</h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-47%</span><span class="fw-bold fs-2"> ₹10,599</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★★☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Due to the different shooting environment, the lighting conditions are different, there may be slight color differences in the product, this is a normal phenomenon. Dimensions are measured by hand, there may be 2-3cm deviations
+Excellent Support: It is supported by a wooden frame, so it has excellent measuring capacity. LONG LASTING AT HOME: stool legs need to be installed by yourself</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/61x3s4dRP4L._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/51jiEK7YJkL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/5184ijZb7mL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">L Shape Convertible Sofa Set for Living Room Furniture Set, Modular Sectional Couch for Small Space, </h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-23%</span><span class="fw-bold fs-2"> ₹9,899</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★☆☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Sturdy Frame Construction – Built with solid wood and reinforced for long-term durability.
+Stylish & Durable Upholstery – Made with premium fabric/Velvet that's both elegant and easy to clean.</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/41ip8Kr4PcL._SY300_SX300_QL70_FMwebp_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/516xRfGHQdL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/81hJb5vIXcL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">FURNY Lifestyle 3 Seater Fabric Sofa Set (Grey-Black) </h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-48%</span><span class="fw-bold fs-2"> ₹6,799</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★★☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Primary Material: Timberwood, Upholstery Material: Fabric, Top Material: Wood ; Product Care: Vacuum: Vacuum regularly with a vacuum attachment ; Sunlight: Do not expose upholstered pieces to direct sunlight</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+                 <div class="backbutton">
+                  <button class="buttton btn btn-dark" onclick="display('section2')">back</button>
+                 </div>
+          </div>
+    </div>
+       </div>
+<div id="sectionviewdetails3">
+  <div class="container">
+    <div class="row">
+
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/61mea3NHzRL._SX679_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/41E+yrASi7L._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/51Kug-WzLXL._SL1500_.jpg" class="d-block w-100 image"  alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">Rosebell - 4 Seater Modular Sectional Couch for Small Space, Upholstery-Velvet Fabric</h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-47%</span><span class="fw-bold fs-2"> ₹10,599</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★★☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Due to the different shooting environment, the lighting conditions are different, there may be slight color differences in the product, this is a normal phenomenon. Dimensions are measured by hand, there may be 2-3cm deviations
+Excellent Support: It is supported by a wooden frame, so it has excellent measuring capacity. LONG LASTING AT HOME: stool legs need to be installed by yourself</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/61x3s4dRP4L._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/51jiEK7YJkL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/5184ijZb7mL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">L Shape Convertible Sofa Set for Living Room Furniture Set, Modular Sectional Couch for Small Space, </h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-23%</span><span class="fw-bold fs-2"> ₹9,899</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★☆☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Sturdy Frame Construction – Built with solid wood and reinforced for long-term durability.
+Stylish & Durable Upholstery – Made with premium fabric/Velvet that's both elegant and easy to clean.</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+         <div class="courosel-card  col-4 shadow-lg p-3 mb-5 bg-body rounded">
+        
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                               <ol class="carousel-indicators">
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                          <img src="https://m.media-amazon.com/images/I/41ip8Kr4PcL._SY300_SX300_QL70_FMwebp_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                          <img src="https://m.media-amazon.com/images/I/516xRfGHQdL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                         <img src="https://m.media-amazon.com/images/I/81hJb5vIXcL._SL1500_.jpg" class="d-block w-100 image" alt="...">
+                                    </div>
+                            </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                     </a>
+                       </div>
+                       <div class="imagetext">
+                                    <h3 class="heading-part">FURNY Lifestyle 3 Seater Fabric Sofa Set (Grey-Black) </h4> 
+ 
+                                    <br>
+                                    <span class="fw-bold fs-1">Price : </span> <span class="fw-bold "> <span class="text-danger fs-2">-48%</span><span class="fw-bold fs-2"> ₹6,799</span>  (All tax incluted)</span>
+                                    <br>
+
+                                    <span class="fw-bold fs-2">Rating :</span><span class="fw-bold fs-2">★★★★☆</span>
+
+                                    <br>
+                                    <span class="fw-bold fs-2">About item:  </span> <span class="fw-bold"> Note: Primary Material: Timberwood, Upholstery Material: Fabric, Top Material: Wood ; Product Care: Vacuum: Vacuum regularly with a vacuum attachment ; Sunlight: Do not expose upholstered pieces to direct sunlight</span>
+                                    <br>
+                                    <br>
+                                     
+                                    
+                                    <div class="buttonbox d-flex flex-row justify-content-around">
+                                    <button class="order-button" onclick="display('sectionaddress')">buy now</button>
+                                    <button class="order-button">Add to Bag</button>
+                                    </div>
+                                    
+                        </div>
+                 </div>
+                 <div class="backbutton">
+                  <button class="buttton btn btn-dark" onclick="display('section2')">back</button>
+                 </div>
+          </div>
+    </div>
+       </div>
+
+       
+  <div id="sectionaddress">
+
+          <div class="applicatonpart shadow-lg p-3 mb-5 bg-body rounded">
+               <div class="applicationheadingpart text-center">
+                    <h3 class="bg-dark text-light">Address Detailes</h3>
+                </div>
+        <br>
+                    <div class="mb-3">
+                        <h5>Full Name </h5>
+                         <input type="text" placeholder="enter your full name" class="inputitem">
+                    </div>
+                   <div class="mb-3">
+                          <h5>Email </h5>
+                          <input type="email" placeholder="enter your email ID" class="inputitem">
+                  </div>
+                   <div class="mb-3">
+                       <h5>Mobile Number</h5>
+                        <input type="TEXT"  id="phone"   name="phone"   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required placeholder="enter your mobile number" />
+                    </div>
+     <br>
+                    <div class="mb-3">
+                         <h5>payment option</h5>
+                                  <select name="payment" id="paymentid" class="paymentselector">
+                                         <option value="upi" class="option">Select your payment option</option>
+                                         <option value="upi"  class="option">payment by UPI</option>
+                                        <option value="upi"  class="option">payment by credit card</option>
+
+
+                                  </select>
+       <br>
+      <br>
+             <address>
+                  <h4>Delivery address</h4>
+                   <input type="textarea" class="textaddress" placeholder="enter delivery address ">
+             </address>
+      <div class="text-center">
+               <button class="conformbutton" onclick="display('section2')">conform</button>
+        </div>
+      </div>
+      
+    </div>
+
+</div>
+   
+
+    <script
+      type="text/javascript"
+      src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"
+    ></script>
+</body>
+</html>

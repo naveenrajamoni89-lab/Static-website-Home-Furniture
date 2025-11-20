@@ -1,0 +1,131 @@
+.video-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.button{
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.head{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: bold;
+    color: black;
+}
+.para{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+span{
+    color: rgb(25, 23, 26);
+}
+.content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 2em;
+      z-index: 1;
+      text-align: center;
+    }
+.card{
+  height: fit-content;
+
+  border-radius: 10px;
+  border :solid 2px ;
+}
+.img-card{
+  height: 243px;
+  width: 400px;
+  margin-left: -10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.img-card:hover{
+    height: 255px;
+    padding-top: -10px;
+    padding-bottom: -10px;
+    margin: -5px;
+}
+.boxtext:hover{
+    padding-left: 30px;
+}
+.viewbutton{
+  background-color: rgb(35, 35, 76);
+    color: aliceblue;
+    height: 35px;
+    border: solid 2px;
+    border-color: rgb(17, 27, 27);
+    border-radius: 3px;
+}
+.home-image{
+  border-radius: 10px;
+}
+.buttonbox{
+    height: 50px;
+    width: auto;
+}
+.order-button{
+    background-color: blue;
+    color: aliceblue;
+    height: 45px;
+    border: solid 3px;
+    border-color: rgb(129, 215, 218);
+    border-radius: 10px;
+
+}
+.order-button:active{
+    background-color: black;
+}
+.applicatonpart{
+  height: 650px;
+  width: 45%;
+  margin:10%;
+  margin-left: 29%;
+  background-color: rgb(230, 222, 212);
+}
+input{
+  width: 100%;
+  label {
+  margin: 0.4rem 0;
+}
+}
+.option{
+  color: rgb(226, 218, 218);
+  
+}
+.paymentselector{
+  width: 100%;
+  background-color: rgb(80, 118, 129);
+  color :white;
+  border: solid 2px;
+  border-color: rgb(74, 64, 104);
+}
+.textaddress{
+  height: 100px;
+  width: 100%;
+  text-align: start;
+}
+.conformbutton{
+  background-color: rgb(22, 28, 26);
+  color: aliceblue;
+  border-radius: 5px;
+}
+.conformbutton:active{
+  background-color: cadetblue;
+
+}
